@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="fmajax" namespace="/fmajax" extends="json-default">
+
+		
+		
+		<action name="bookAJAX_delete" class="loyy.action.BookAJAXAction" method="delete">
+			<result type="json">
+				<param name="root">failIds</param> 
+			<!-- 	<param name="defaultEncoding">utf-8</param> -->
+			</result>
+		</action>
+		<action name="bookAJAX_edit" class="loyy.action.BookAJAXAction" method="edit">
+			<result type="json">
+			<!-- 	<param name="root">bookList</param>  -->
+			<!-- 	<param name="defaultEncoding">utf-8</param> -->
+			<param name="contentType">text/html</param>
+			</result>
+		</action>
+		<action name="bookAJAX_add" class="loyy.action.BookAJAXAction" method="add">
+			<result type="json">
+			<!-- 	<param name="root">bookList</param>  -->
+			<!-- 	<param name="defaultEncoding">utf-8</param> -->
+			<param name="contentType">text/html</param>
+			</result>
+		</action>
+		<action name="bookAJAX_list" class="loyy.action.BookAJAXAction"
+			method="list">
+			<result type="json">
+			<param name="root">bookList</param> 
+			<!-- 	<param name="defaultEncoding">utf-8</param> -->
+			</result>
+		</action>
+		<!-- Add actions here -->
+	</package>
+</struts>

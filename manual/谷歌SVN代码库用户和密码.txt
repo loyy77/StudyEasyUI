@@ -1,0 +1,15 @@
+Command-line access
+
+If you plan to make changes, use this command to check out the code as yourself using HTTPS:
+
+# Project members authenticate over HTTPS to allow committing changes.
+svn checkout https://easyui01.googlecode.com/svn/trunk/ easyui01 --username Loyy77@gmail.com
+
+When prompted, enter your generated googlecode.com password.
+Use this command to anonymously check out the latest project source code:
+
+# Non-members may check out a read-only working copy anonymously over HTTP.
+svn checkout http://easyui01.googlecode.com/svn/trunk/ easyui01-read-only
+
+
+Loyy77@gmail.com's googlecode.com password: Bx4cA8xr3MM3

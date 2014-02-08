@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>talent validate</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta http-equiv="Page-Enter" content="revealTrans(duration=1, transition=2)"/><meta http-equiv="Page-Exit" content="revealTrans(duration=1, transition=2)"/>
+		<style type="text/css">
+
+a{
+		text-decoration: none;
+}
+/**LVHA
+link:连接平常的状态
+　visited:连接被访问过之后
+　　active:连接被按下的时候
+　　hover:鼠标放到连接上的时候
+**/
+
+a:link{color: #108ac6;}
+a:visited{color: #108ac6;}
+a:active{color: #108ac6;}
+a:hover{color:#ffffff;background-color: #108ac6;text-decoration: underline;}
+
+
+ul{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+*{
+	font-family: Tahoma, 宋体;
+	font-size:9pt;
+}
+li {
+	margin-left:0px;
+}
+.header {
+	border:1px solid #9BDF70;
+	height:25px;
+	background-color:#9BDF70;
+	color: #ffffff;
+	vertical-align: text-bottom;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align:left;
+	padding:2px 2px 2px 4px;
+}
+		</style>
+		<link type="text/css" rel="stylesheet" href="./demo/demo.css" /> 
+	</head>
+
+	<body >
+		<div style='text-align:center'>
+		<div class='header'>talent-validate框架使用手册</div>
+		<div style='border:1px solid #9BDF70;height:650px;'>
+			
+		<table width='100%'>
+			<tr>
+				<td width='270px' height='646px' style='vertical-align:top;background-color: #D7F2C6;'>
+					<!-- CSS Tabs -->
+					<li>演示各种验证器
+						<ul>
+							
+							<li title="正则表达式">
+								<a href="javascript:show('regex')">
+									<span>tt.RV(正则表达式)</span>
+								</a>
+							</li>
+							
+							<li title="服务端验证">
+								<a href="javascript:show('remote', '.jsp')">
+									<span>tt.RemoteV(服务端验证)</span>
+								</a>
+							</li>
+							
+							<li title="选择个数">
+								<a href="javascript:show('selectCount')">
+									<span>tt.SCV(选择个数)</span>
+								</a>
+							</li>
+							
+							
+							<li title="日期时间">
+								<a href="javascript:show('datetime')">
+									<span>tt.DV(日期及时间)</span>
+								</a>
+							</li>
+							
+							<li title="数字范围">
+								<a href="javascript:show('numRange')">
+									<span>tt.NRV(数字范围)</span>
+								</a>
+							</li>
+							<li title="字符串长度">
+								<a href="javascript:show('length')">
+									<span>tt.LV(字符串长度)</span>
+								</a>
+							</li>
+							<li title="字段比较">
+								<a href="javascript:show('compare')">
+									<span>tt.CV(与其它字段或值比较)</span>
+								</a>
+							</li>
+							
+							
+							<li>
+								<a href="javascript:show('get')">直接通过tt.vf获取的验证器</a>
+								<ul>
+									<li title="非空">
+										<a href="javascript:show('required')">
+											<span>req(非空)</span>
+										</a>
+									</li>
+									<li title="数字">
+										<a href="javascript:show('num')">
+											<span>num(数字)</span>
+										</a>
+									</li>
+									<li title="整数">
+										<a href="javascript:show('int')">
+											<span>int(整数)</span>
+										</a>
+									</li>
+							
+									<li title="邮箱">
+										<a href="javascript:show('email')">
+											<span>email(邮箱)</span>
+										</a>
+									</li>
+									<li title="IP">
+										<a href="javascript:show('ip')">
+											<span>ip(ipv4)</span>
+										</a>
+									</li>
+									<li title="邮政编码">
+										<a href="javascript:show('postcode')">
+											<span>postcode(邮政编码)</span>
+										</a>
+									</li>
+									<li title="电话号码">
+										<a href="javascript:show('tel')">
+											<span>tel(电话号码)</span>
+										</a>
+									</li>
+									<li title="身份证号码">
+										<a href="javascript:show('idcard')">
+											<span>idcard(身份证号码)</span>
+										</a>
+									</li>
+								
+								</ul>
+								
+							</li>
+							
+							
+							
+						</ul>
+					</li>
+						
+					<li>
+							深入演示使用方法
+						<ul>
+							<li title="用户自定义验证器">
+								<a href="javascript:show('userdefine')">
+									<span>用户自定义验证器</span>
+								</a>
+							</li>
+							<li title="在指定位置提示信息">
+								<a href="javascript:show('pointErrorId')">
+									<span>在指定位置提示信息</span>
+								</a>
+							</li>
+							<li title="灵活取消添加验证">
+								<a href="javascript:show('remove')">
+									<span>灵活取消添加验证</span>
+								</a>
+							</li>
+							<li title="验证指定form">
+								<a href="javascript:show('formFilter')">
+									<span>验证指定form</span>
+								</a>
+							</li>
+							<li title="验证指定id">
+								<a href="javascript:show('idFilter')">
+									<span>验证指定id</span>
+								</a>
+							</li>
+							<li title="验证指定name">
+								<a href="javascript:show('nameFilter')">
+									<span>验证指定name</span>
+								</a>
+							</li>
+							
+							<li title="用alert进行信息提示">
+								<a href="javascript:show('alert')">
+									<span>用alert进行信息提示</span>
+								</a>
+							</li>
+							<li title="验证框架的配置项">
+								<a href="javascript:show('config')">
+									<span>验证框架的配置项</span>
+								</a>
+							</li>
+							
+						</ul>
+					</li>
+					
+					
+					
+					<!--
+					
+					<li>
+							其它积累
+						<ul>
+							<li title="获取元素位置">
+								<a href="javascript:show('zz_getposition')">
+									<span>获取元素位置</span>
+								</a>
+							</li>
+							
+						</ul>
+					</li>
+					-->
+					
+					
+					
+				</td>
+				
+				<td align="center">
+					<iframe id="iframe_id" src=""
+							style="padding:0px;margin:0px;border:0px solid #9BDF70;width:100%;height:100%"></iframe>
+					
+				</td>
+			</tr>
+		</table>
+			
+			
+		</div>
+		</div>
+
+	</body>
+	<script id="talent_script">
+		function show(file, subfix) {
+			if (subfix){
+				document.getElementById("iframe_id").src = "./demo/"+file + subfix;
+			}else{
+				document.getElementById("iframe_id").src = "./demo/"+file + ".html";
+			}
+			
+			
+		}
+		show('required');
+		
+		function setCwinHeight(){
+		  var iframe=document.getElementById("iframe_id"); //iframe id
+		  
+		   if (iframe && !window.opera){
+		    if (iframe.contentDocument && iframe.contentDocument.body.offsetHeight){
+		     iframe.height = iframe.contentDocument.body.offsetHeight;
+		    }else if(iframe.document && iframe.document.body.scrollHeight){
+		     iframe.height = iframe.Document.body.scrollHeight;
+		    }
+		   }
+		 }
+		 setCwinHeight();
+
+	</script>
+</html>
